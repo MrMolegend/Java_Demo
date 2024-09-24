@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Average Calculator</title>
+    </head>
+    <body>
+        <h1>Simple Average Calculator</h1>
+    
+        <label for="numCount">How many numbers do you want to average?</label>
+        <input type="number" id="numCount" min="1">
+        <button onclick="askForNumbers()">Submit</button>
+    
+
+        <div id="numberInputs"></div>
+    
+        <div id="result"></div>
+        <script>
+            
+            function askForNumbers() {
+                
+                var numCount = document.getElementById("numCount").value;
+                var numberInputs = document.getElementById("numberInputs");
+                
+           
+                numberInputs.innerHTML = "";
+                document.getElementById("result").innerHTML = "";
+    
+             
+                for (var i = 0; i < numCount; i++) {
+                
+                    numberInputs.innerHTML += "<label>Enter number " + (i + 1) + ":</label>";
+                    numberInputs.innerHTML += "<input type='number' id='number" + i + "'><br>";
+                }
+    
+                numberInputs.innerHTML += "<button onclick='calculateAverage()'>Calculate</button>";
+            }
+    
+            function calculateAverage() {
+                var numCount = document.getElementById("numCount").value;
+                var total = 0;
+    
+                for (var i = 0; i < numCount; i++) {
+                    var number = parseFloat(document.getElementById("number" + i).value);
+                    total += number;
+                }
+    
+          
+                var average = total / numCount;
+    
+               
+                document.getElementById("result").innerHTML = "Total: " + total + "<br>Average: " + average;
+            }
+        </script>
+    </body>
+    </html>

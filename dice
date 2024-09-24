@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DICE Demo</title>
+</head>
+<body>
+<script>
+document.write("oooooooooo<br />")
+
+document.write("o&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspo<br />")
+
+document.write("o&nbsp&nbsp&nbsp#&nbsp&nbsp&nbsp&nbsp&nbsp#&nbsp&nbsp&nbsp&nbspo<br />")
+
+document.write("o&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspo<br />")
+
+document.write("o&nbsp&nbsp&nbsp#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp#&nbsp&nbsp&nbspo<br />")
+
+document.write("o&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspo<br />")
+
+document.write("oooooooooo<br />")
+
+    
+
+</script> 
+</body>
